@@ -1,0 +1,26 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    /* alinear 1 Solo elemento de forma vertical */
+    justify-items: center;
+    
+    /* alinear 1 Solo elemento de forma Horizontal */
+    align-items: center;
+    /* auto | start | end | stretch | center */
+}
+
+/* 
+    ahora si queremos trabajar con un solo 
+    elemento de la GRID lo podemo hacer de la siguiente forma 
+    y sus propiedades unicas para el elemento
+*/
+
+.contenedor .item {
+    background-color: #ff8000;
+    /* aplicamos esto solo para elementos idependientes */
+    justify-self: stretch;
+    align-self: stretch;
+}
