@@ -1,0 +1,9 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    /*  en esta funcion pasamos el numero de columnas a repetir y luego la medida
+        que tendra cada una de estas
+    */
+    grid-template-columns: 200px repeat(4, 1fr) 200px;
+    grid-template-rows: repeat(3, 1fr);
+}
