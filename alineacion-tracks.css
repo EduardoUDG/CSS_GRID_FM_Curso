@@ -1,0 +1,15 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    height: 700px;
+
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+
+    /* Alineamiento horizontalmente */
+    justify-content: space-between;
+
+    /* Alineamiento horizontalmente */
+    align-content: space-between;
+    /* normal | start | cemter | end | space-around | space-between | space-evenly */
+}
