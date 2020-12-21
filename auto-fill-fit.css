@@ -1,0 +1,16 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+/* 
+    Auto fill nos ayuda a llenar toda nuestra 
+    fila, con todas las columnas que pueda poner dentro
+*/
+
+
+/* 
+    Auto fit nos permite llenar el 100% de la fila 
+    con las comlumnas dentro de una grid, o las columnas disponibles
+*/
+
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
