@@ -1,0 +1,33 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 100px 200px;
+
+    /* GRID implicita */
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
+
+    /* 
+    con esta propiedad ↓ podemos indicar que los elementos
+    sean enumerados de forma vertical y no de forma horizontal como 
+    esta por defecto
+    */
+    grid-auto-flow: dense;
+
+    /* 
+    -row
+    -column
+    -dense
+    */
+}
+
+.contenedor .span2 {
+    grid-column: span 2;
+    background-color: #ff8000;
+}
+
+.contenedor .span3 {
+    grid-column: span 3;
+    background-color: #575757;
+}
